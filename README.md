@@ -25,13 +25,13 @@ app.get('/',(req,res,next)=>{
 app.listen(3000);
 ```
 
-* Installeing graphql-express and graphql
+* Installing graphql-express and graphql
 
 ```bash
 npm install --save graphql-express graphql
 ```
 
-* Import graphQlHttp and create a basic example
+* Importing graphQlHttp and creating a basic example
 
 ```javascript
 ...
