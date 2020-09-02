@@ -1,12 +1,35 @@
-# graphQLCouse
+# graphQLCourse
 
 starter graphQL simple app
 
-* Installed express, body parser, nodemon
+* Basic nodeJS app
+Installing express, body-parser and nodemon
 
-* created a simple app.js file with a get that returns hello world
+```bash
+npm install --save express body-parser
+npm install --save-dev nodemon
+```
 
-* Installed graphql-express and graphql
+Creating a basic app, in app.js
+
+```javascript
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+app.use(bodyParser.json())
+
+app.get('/',(req,res,next)=>{
+    res.send("Hello World");
+})
+
+app.listen(3000);
+```
+
+* Installeing graphql-express and graphql
+
+```bash
+npm install --save graphql-express graphql
+```
 
 * Import graphQlHttp and create a basic example
 
@@ -45,6 +68,4 @@ app.use(
         },
         graphiql: true //graphq query interface
     }));
-const graphQlHttp = require('express-graphql');
-...
 ```
